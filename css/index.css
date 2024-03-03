@@ -1,0 +1,680 @@
+body:has(.Home:target) .Home::before,
+body:has(.About:target) .About::before,
+body:has(.Services:target) .Services::before,
+body:has(.Works:target) .Works::before,
+body:has(.Clients:target) .Clients::before,
+body:has(.Team:target) .Team::before
+body:has(.Contact:target) .Contact::before{
+    width: 70%;
+}
+
+/* home-section */
+
+.bg-img {
+    background-image: url(../imgs/imgs/bg.jpg);
+    background-position: center;
+    background-size:cover;
+    background-attachment:scroll;
+}
+.navbar .navbar-brand {
+    font-family: 'Montserrat', sans-serif;
+}
+.navbar ul li a {
+    position: relative;
+    font-family: 'Poppins', sans-serif;
+}
+
+.navbar ul li a::before {
+    content: " ";
+    width: 0%;
+    height: 0.125rem;
+    background-color: #000000;
+    position: absolute;
+    bottom: 0.3rem;
+    left: 0.6rem;
+    transition: 0.7s;
+}
+
+.navbar ul li a:hover::before {
+    width: 75%;
+}
+
+.bg-layer-black {
+    background-color: rgba(0, 0, 0, 0.7);
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+.Home-content h5{
+    font-family: 'Montserrat', sans-serif;
+}
+
+
+h1::after {
+    content: "|";
+    animation: 5s typing infinite ease-in;
+    font-size: 2.5rem;
+    line-height: 3.75rem;
+    -webkit-animation: 5s typing infinite ease-in;
+    font-family: 'Montserrat', sans-serif;
+    font-size:60px;
+    line-height:72px;
+}
+
+@keyframes typing {
+    0% {
+        content: "|";
+    }
+
+    39% {
+        content: "Larry|";
+    }
+    40% {
+        content: "Larry Daniels|";
+    }
+    60% {
+        content: "|";
+    }
+    65% {
+        content: "Devel|";
+    }
+
+    66% {
+        content: "Developer|";
+    }
+    75% {
+        content: "|";
+    }
+    80% {
+        content: "Desi|";
+    }
+
+    81% {
+        content: "Designe|";
+    }
+
+    92% {
+        content: "Designer|";
+    }
+
+    100% {
+        content: "|";
+    }
+}
+.Home-content .icon-home i{
+    padding: 16px 13px;
+}
+.Home-content .icon-home{ 
+    transition:1s; 
+}
+.Home-content .icon-home:hover{ 
+    cursor: pointer;
+}
+
+
+/* about-me-section */
+
+.card .about-photo {
+    border: #E5E5E5 3px dotted;
+    border-top: none;
+    border-right: none;
+}
+.card .about-photo1{
+    margin:6px;
+    border: #E5E5E5 3px dotted;
+    border-top: none;
+    border-right: none;
+    border-left: 50%;
+}
+.card .about-photo img{
+    margin:6px;
+    border: #E5E5E5 3px dotted;
+    border-top: none;
+    border-right: none;
+    border-left: -250px;
+}
+
+.card .card-body h3{
+    font-family: 'Montserrat', sans-serif; 
+} 
+.card .card-body .card-text{
+    font-family: 'Poppins', sans-serif;
+}
+.card .card-body .spa-le{
+    letter-spacing:2px;
+}
+
+.progress-bar {
+    font-family: 'Montserrat', sans-serif;  
+    text-align: left;
+    padding: 0px 0px 23px 0px;
+}
+.progress, .progress-stacked {
+    font-family: 'Montserrat', sans-serif;  
+    border-radius: 6px;
+    margin-top: 20px;
+    padding: 0px 0px 23px 0px;
+    background: #f7f7f7;
+    box-shadow: 0px 2px 7px rgba(0, 0, 0, 0.15) inset;
+}
+
+.card .card-body .btn{
+    font-family: 'Poppins', sans-serif;
+}
+.btn-light {
+    --bs-btn-color: #000;
+    --bs-btn-bg: #f8f9fa;
+    --bs-btn-border-color: #0d0e0e;
+    --bs-btn-hover-color: #ffffff;
+    --bs-btn-hover-bg: #18191a;
+    --bs-btn-hover-border-color: #18191a;
+}
+ .btn-dark {
+    --bs-btn-color: #f8f9fa;
+    --bs-btn-bg: #18191a;
+    --bs-btn-border-color: #0d0e0e;
+    --bs-btn-hover-color: #18191a;
+    --bs-btn-hover-bg: #f8f9fa;
+} 
+
+
+/* services-section */
+
+.Services  .fa{
+    border-radius: 50%;
+    padding: 1.25rem 1.4375rem;
+    transition: 1s;
+    background-color: rgba(0, 0, 0, 0.075);
+}
+.Services .services-content h3::after{
+    content: "";
+    position: absolute;
+    height: 0.375rem;
+    width:11rem;
+    bottom:1.2rem;
+    left: 29.5rem;
+    border-right: 0;
+    border-left: 0;
+    border-bottom: 0;
+    color: #E5E5E5;
+    border-style: dotted;
+    border-spacing:5px;
+    border-radius: 6%;
+}
+.WEB-DESIGN{
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.05), 0 6px 20px 0 rgba(0, 0, 0, 0.08);
+    transition: 0.09s;
+}
+.Branding{
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.05), 0 6px 20px 0 rgba(0, 0, 0, 0.08);
+    transition: 0.09s;
+}
+.Development{
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.05), 0 6px 20px 0 rgba(0, 0, 0, 0.08);
+    transition: 0.09s;
+}
+.Creative-Design{
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.05), 0 6px 20px 0 rgba(0, 0, 0, 0.08);
+    transition: 0.09s;
+}
+.Fully-Responsive{
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.05), 0 6px 20px 0 rgba(0, 0, 0, 0.08);
+    transition: 0.09s;
+}
+.Retina-Ready{
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.05), 0 6px 20px 0 rgba(0, 0, 0, 0.08);
+    transition: 0.09s;
+}
+.WEB-DESIGN:hover {
+    .fa{
+    background-color: #18191a;
+    color: white;}
+}
+.Branding:hover {
+    .fa{
+    background-color: #18191a;
+    color: white;}
+}
+.Development:hover {
+    .fa{
+    background-color: #18191a;
+    color: white;}
+}
+.Creative-Design:hover {
+    .fa{
+    background-color: #18191a;
+    color: white;}
+}
+.Fully-Responsive:hover {
+    .fa{
+    background-color: #18191a;
+    color: white;}
+}
+.Retina-Ready:hover {
+    .fa{
+    background-color: #18191a;
+    color: white;}
+}
+
+.Services h3 ,h6{
+    font-family: 'Montserrat', sans-serif;
+    font-weight:900;
+    color:#343434;
+}
+.Services p{
+    font-family: 'Poppins', sans-serif;
+    color:#748182;
+}
+.bg-services{
+    background-color: #F7F7F7;
+    padding:5.625rem;
+}
+
+/* Portfolio-section */
+
+.Portfolio h3, h6{
+    font-family: 'Montserrat', sans-serif;
+    font-weight:900;
+    color:#343434;
+}
+.Portfolio ul li a{
+    font-family: 'Poppins', sans-serif;
+    cursor: pointer;
+}
+.Portfolio  h6{
+    font-size: 12px;
+    margin-top: 7.2rem;
+    letter-spacing: 3px;
+}
+ .Portfolio .Portfolio-content h3::after{
+    content: "";
+    position: absolute;
+    height: 0.3rem;
+    width:11rem;
+    top:2.5rem;
+    left: 29.5rem;
+    border-right: 0;
+    border-left: 0;
+    border-bottom: 0;
+    color: #E5E5E5;
+    border-style:  dotted;
+    border-spacing:5px;
+    border-radius: 6%;
+} 
+.Portfolio   .fa-solid  {
+    width: 30px;
+    height:30px;
+    border-radius: 50%;
+    background-color: #111;
+    color: #eee;
+    border: #000 1px solid;
+    cursor: pointer;
+    transition: 0.1s;
+}
+.Portfolio .fa-solid:hover  {
+    width: 30px;
+    height:30px;
+    border-radius: 50%;
+    background-color: #ffffff;
+    color: #111;
+    border: #000 1px solid;
+}
+
+.Portfolio .imag1 {
+    position: relative;
+    overflow: hidden;
+}
+
+.Portfolio .imag1 .imag1-1 {
+    background-color: rgb(255, 255, 255,0.9);
+    position: absolute;
+    top: 100%;
+    left: 0px;
+    right: 0px;
+    bottom: 0px;
+    transition: 0.09s s bottom ease-in-out;
+}
+
+.Portfolio  .imag1:hover .imag1-1 {
+    top: 5px;
+    left: 5px;
+    right: 5px;
+    bottom: 5px;
+}
+
+.Portfolio .imag2 {
+    position: relative;
+    overflow: hidden;
+}
+
+.Portfolio .imag2 .imag2-1 {
+    background-color: rgb(255, 255, 255,0.9);
+    position: absolute;
+    top: 100%;
+    left: 0px;
+    right: 0px;
+    bottom: 0px;
+    transition: 0.09s bottom ease-in-out;
+}
+
+.Portfolio  .imag2:hover .imag2-1 {
+    top: 5px;
+    left: 5px;
+    right: 5px;
+    bottom: 5px;
+    
+}
+
+.Portfolio .imag3 {
+    position: relative;
+    overflow: hidden;
+}
+
+.Portfolio .imag3 .imag3-1 {
+    background-color: rgb(255, 255, 255,0.9);
+    position: absolute;
+    top: 100%;
+    left: 0px;
+    right: 0px;
+    bottom: 0px;
+    transition: 0.09s bottom ease-in-out;
+}
+
+.Portfolio  .imag3:hover .imag3-1 {
+    top: 5px;
+    left: 5px;
+    right: 5px;
+    bottom: 5px;
+  
+}
+
+
+.Portfolio .imag4 {
+    position: relative;
+    overflow: hidden;
+}
+
+.Portfolio .imag4 .imag4-1 {
+    background-color: rgb(255, 255, 255,0.9);
+    position: absolute;
+    top: 100%;
+    left: 0px;
+    right: 0px;
+    bottom: 0px;
+    transition: 0.09s bottom ease-in-out;
+}
+
+.Portfolio  .imag4:hover .imag4-1 {
+    top: 5px;
+    left: 5px;
+    right: 5px;
+    bottom: 5px;
+   
+}
+
+
+.Portfolio .imag5 {
+    position: relative;
+    overflow: hidden;
+}
+
+.Portfolio .imag5 .imag5-1 {
+    background-color: rgb(255, 255, 255,0.9);
+    position: absolute;
+    top: 100%;
+    left: 0px;
+    right: 0px;
+    bottom: 0px;
+    transition: 0.09s bottom ease-in-out;
+}
+
+.Portfolio  .imag5:hover .imag5-1 {
+    top: 5px;
+    left: 5px;
+    right: 5px;
+    bottom: 5px;
+  
+}
+
+.Portfolio .imag6 {
+    position: relative;
+    overflow: hidden;
+}
+
+.Portfolio .imag6 .imag6-1 {
+    background-color: rgb(255, 255, 255,0.9);
+    position: absolute;
+    top: 100%;
+    left: 0px;
+    right: 0px;
+    bottom: 0px;
+    transition: 0.09s bottom ease-in-out;
+}
+
+.Portfolio  .imag6:hover .imag6-1 {
+    top: 5px;
+    left: 5px;
+    right: 5px;
+    bottom: 5px;
+ 
+}
+
+/* testmonial-section */
+
+.bg-testmonial .testmonial-content h3::after{
+    content: "";
+    position: absolute;
+    height: 0.375rem;
+    width:16rem;
+    top:2.5rem;
+    left: 28.5rem;
+    border-right: 0;
+    border-left: 0;
+    border-bottom: 0;
+    color: #E5E5E5; 
+    border-style: dotted;
+    border-spacing:5px;
+    border-radius: 6%;
+}
+.bg-testmonial{
+    background-color: #F7F7F7;
+    padding:5.3rem;
+}
+.carousel .carousel-inner img{
+    width:11%;
+}
+.carousel-indicators [data-bs-target]{
+    width: 0.6rem;
+    height: 0.6rem;
+    border-radius: 50%;
+    background-color:#869791;
+    
+}
+.carousel-indicators button{transition: 0.1s;}
+.carousel-indicators button:hover{
+    background-color:#343434;
+}
+
+.carousel-item{
+    padding: 5rem;
+}
+.carousel h3, h6{
+    font-family: 'Montserrat', sans-serif;
+    color:#343434;
+}
+.carousel p{
+    font-family: 'Poppins', sans-serif;
+    color:#748182;
+}
+
+/* count-section */
+
+.count h3{
+    font-family: 'Montserrat', sans-serif;
+}
+.count p{
+    font-family: 'Poppins', sans-serif;
+    color:#748182;
+}
+.bg-count{
+    padding:5.625rem;
+}
+
+/* OurTeam-section */
+
+.bg-OurTeam .OurTeam-content h3::after{
+    content: "";
+    position: absolute;
+    height: 0.375rem;
+    width:12.5rem;
+    top:267rem;
+    left: 35.8rem;
+    border-right: 0;
+    border-left: 0;
+    border-bottom: 0;
+     color: #E5E5E5; 
+    border-style: dotted;
+    border-spacing:5px;
+    border-radius: 6%;
+}
+.bg-OurTeam{
+    background-color: #F7F7F7;
+    padding:5.625rem;
+}
+.card-body1{
+    background-color: #5B5B5B;
+}
+.bg-OurTeam h3, h4 ,h5{
+    font-family: 'Montserrat', sans-serif;
+}
+
+.bg-OurTeam   .fa-brands{
+    width: 40px;
+    height:40px;
+    border-radius: 50%;
+    background-color: rgb(0, 0, 0);
+    color: #eee;
+    border: #000 1px solid;
+    cursor: pointer;
+    transition: 0.1s;
+}
+.bg-OurTeam .fa-brands:hover{
+    width: 40px;
+    height:40px;
+    border-radius: 50%;
+    background-color:white;
+    color: #111;
+    border: #000 1px solid;
+}
+
+.bg-OurTeam .card {
+    position: relative;
+    overflow: hidden;
+}
+.bg-OurTeam .mar{
+    margin-top: 10rem;
+}
+.bg-OurTeam .card .imag1 {
+    background-color: rgb(255, 255, 255,0.9);
+    position: absolute;
+    top: 100%;
+    left: 0px;
+    right: 0px;
+    bottom: 0px;
+    transition-duration: 0.45s;
+    transition-timing-function: ease;
+    transition-delay: 0.1s;
+    transition-property: all;
+}
+
+.bg-OurTeam  .card:hover .imag1 {
+    top: 5px;
+    left: 5px;
+    right: 5px;
+    bottom: 120px;
+    transform: rotateY(360deg) ;
+}
+
+
+/* contactus-section */
+
+.Contact h3 ,h6{
+    font-family: 'Montserrat', sans-serif;
+}
+.Contact p{
+    font-family: 'Poppins', sans-serif;
+    color:#748182;
+}
+.bg-Contact .Contact-content h3::after{
+    content: "";
+    position: absolute;
+    height: 0.375rem;
+    width:14rem;
+    top:3rem;
+    left: 28rem;
+    border-right: 0;
+    border-left: 0;
+    border-bottom: 0;
+    color: #E5E5E5;
+    border-style: dotted;
+    border-spacing:5px;
+    border-radius: 6%;
+}
+.bg-Contact{
+    padding:1.7rem;
+}
+.Contact  .fa{
+    border-radius: 50%;
+    padding: 1.25rem 1.4375rem;
+    transition: 1s;
+    background-color: rgba(0, 0, 0, 0.065);
+}
+.Address{
+transition: 0.1s;
+}
+.Email{
+    transition: 0.1s;
+}
+.Phone{
+    transition: 0.1s;
+}
+.Address:hover {
+    .fa{
+    background-color: #18191a;
+    color: white;}
+}
+.Email:hover {
+    .fa{
+    background-color: #18191a;
+    color: white;}
+}
+.Phone:hover {
+    .fa{
+    background-color: #18191a;
+    color: white;}
+}
+.form-ccontrol{
+        display: block;
+        width: 100%;
+        padding: .375rem .75rem;
+        font-size: 1rem;
+        font-weight: 400;
+        line-height: 1.5;
+        color: var(--bs-body-color);
+        -webkit-appearance: none;
+        -moz-appearance: none;
+        appearance: none;
+        background-color: #F4F4F4;
+        background-clip: padding-box;
+        border: var(--bs-border-width) solid #F4F4F4;
+        border-radius: var(--bs-border-radius);
+        transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+}
+/* footer-section */
+
+.bg-footer{
+    color:#748182;
+    background-color: #1C1C1C;
+}
